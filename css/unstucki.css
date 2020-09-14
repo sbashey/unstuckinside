@@ -1,0 +1,187 @@
+/*main page*/
+* {
+    box-sizing: border-box; /* because it’s 2019, jen simmons */
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(90deg, rgba(204,69,82,1) 0%, rgba(232,242,17,1) 100%);
+    padding: 0;
+    margin: 0;
+    background-size: cover;
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+.flex-container {
+  width: 100%;
+padding: 20px;
+}
+ .logo {
+     height:70px;
+     width: 70px;
+     color: none;
+     border-radius: 50%;
+     border: 5px white;
+     border-style: solid;
+  max-height: 500px;
+  max-width: 500px;
+}
+
+
+
+h1 {
+    display: flex;
+    flex-direction: column;
+    line-height: 100%;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 25px;
+    font-family: 'Syne', sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+    color: white;
+    padding-bottom: 20px;
+    }
+.grid-container {
+  display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-auto-rows: repeat(auto-fit, minmax(500px, 1fr));
+  grid-gap: 25px;
+  /*background-color: yellow;*/
+  padding: 15px; 
+}
+
+.grid-container > div {
+  /*background-color: red;*/
+  font-size: 30px;    
+}
+
+.gannt{
+    display: flex;
+    object-fit: cover;
+    padding: 15px;
+    border-radius: 25px;
+     background-color: rgb(255,255,255,.3);
+    border-radius: 25px;
+    padding: 15px;
+}
+
+.ganntimg img{
+    height: auto;
+    width: 100%;
+}
+img {
+   height: 200px;
+    border-radius: 25px;
+ 
+    
+
+}
+h2 {
+    padding-left: 15px;
+    font-size: 15px;
+    line-height: 125%;
+    letter-spacing: 6px;
+    font-family: 'Syne', sans-serif;
+    font-weight: 600;
+    color: white;
+     }
+p{
+    padding-top: 10px;
+    padding-left: 15px;
+    line-height: 170%;
+    font-size: 10px;
+    font-family: 'Syne', sans-serif;
+    font-weight: 600;
+    color: #800040;
+     }
+
+  
+.blinkimg img{
+     max-width: 175px;
+  height: auto;
+    border-radius: 50px;
+    padding: 5px;
+}
+.memimg img{
+    max-width: 175px;
+  height: auto;
+     border-radius: 52px;
+    padding: 5px;
+}
+.mealimeimg img{
+     border-radius: 50px;
+    padding: 5px;
+    max-width: 175px;
+    height: auto;
+    
+}
+
+.box-big{
+    grid-row: span 2 / auto;
+    grid-column: span 1 / auto;
+}
+
+.box-wide{
+    grid-column: span 1 / auto;
+}
+.box-small{
+     display: grid;
+    align-items: center;
+    justify-items: center;
+       grid-template-columns: repeat(3, 1fr);
+    align-content: center;
+    object-fit: cover;
+    grid-row-gap: 10px;
+    
+   }
+
+@media only screen and (min-width: 45.6em) {
+h2 {
+    padding-left: 15px;
+    font-size: 25px;
+    line-height: 125%;
+    letter-spacing: 6px;
+    font-family: 'Syne', sans-serif;
+    font-weight: 600;
+    color: white;
+     }
+p{
+    padding-top: 10px;
+    padding-left: 15px;
+    line-height: 170%;
+    font-size: 15px;
+    font-family: 'Syne', sans-serif;
+    font-weight: 600;
+    color: #800040;
+     }
+}
+
+@media only screen and (min-width: 65.8em) {
+h2 {
+    padding-left: 15px;
+    font-size: 20px;
+    line-height: 125%;
+    letter-spacing: 6px;
+    font-family: 'Syne', sans-serif;
+    font-weight: 600;
+    color: white;
+     }
+p{
+    padding-top: 10px;
+    padding-left: 15px;
+    line-height: 170%;
+    font-size: 10px;
+    font-family: 'Syne', sans-serif;
+    font-weight: 600;
+    color: #800040;
+     }
+}
+
